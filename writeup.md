@@ -62,8 +62,8 @@ To train the model, I used the AdamOptimizer (same as for LeNet). I used 15 EPOC
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* validation set accuracy reached 0.977 during the final EPOCH
-* test set accuracy (tested once after all model tweaks were completed) was 0.954
+* validation set accuracy reached 0.976 during the final EPOCH
+* test set accuracy (tested once after all model tweaks were completed) was 0.955
 
 It should be noted that dropout was applied during the training process but the "keep probability" was changed to 1.0 during validation and test evaluations.
 
@@ -109,50 +109,50 @@ The model was able to correctly guess all of the traffic signs, which gives an a
 
 Image 1
 
-| Logits         	|     Prediction	        					|
+| Probability         	|     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
-| 65         			| Yield   									|
-| 11     				| Priority road 										|
-| 9					| 36											|
-| 8	      			| 15					 				|
-| 8				    | 10      							|
+| 100%         			| Yield   									|
+| ~0   				| Priority road 										|
+| ~0					| Speed limit (60km/h)											|
+| ~0	      			| Keep left					 				|
+| ~0				    | Stop      							|
 
 Image 2
 
-| Logits         	|     Prediction	        					|
+| Probability         	|     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
-| 20         			| 40   									|
-| 8     				| 35 										|
-| 5					| 37											|
-| 4	      			| 34					 				|
-| 4				    | 38      							|
+| 100%         			| Roundabout mandatory   									|
+| ~0     				| Ahead only 										|
+| ~0					| Speed limit (20km/h)											|
+| ~0	      			| Right-of-way at the next intersection					 				|
+| ~0				    | Turn left ahead      							|
 
 Image 3
 
-| Logits         	|     Prediction	        					|
+| Probability         	|     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
-| 27         			| 35   									|
-| 10     				| 34 										|
-| 7					| 36											|
-| 5	      			| 3					 				|
-| 5				    | 33      							|
+| 100%         			| Ahead only   									|
+| ~0     				| Turn left ahead 										|
+| ~0					| Roundabout mandatory											|
+| ~0	      			| Slippery road					 				|
+| ~0				    | Go straight or right      							|
 
 Image 4
 
-| Logits         	|     Prediction	        					|
+| Probability         	|     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
-| 69         			| 35   									|
-| 36     				| 34 										|
-| 21					| 36											|
-| 16	      			| 3					 				|
-| 12				    | 33      							|
+| 100%         			| No entry   									|
+| ~0     				| Stop 										|
+| ~0					| Speed limit (30km/h)											|
+| ~0	      			| Children crossing					 				|
+| ~0				    | Speed limit (20km/h)      							|
 
-Image 3
+Image 5
 
-| Logits         	|     Prediction	        					|
+| Probability         	|     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
-| 27         			| 35   									|
-| 10     				| 34 										|
-| 7					| 36											|
-| 5	      			| 3					 				|
-| 5				    | 33      							|
+| 100%         			| Road work   									|
+| ~0     				| Speed limit (80km/h) 										|
+| ~0					| Dangerous curve to the right											|
+| ~0	      			| No passing for vehicles over 3.5 metric tons					 				|
+| ~0				    | Yield      							|
