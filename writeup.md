@@ -19,7 +19,7 @@ signs data set:
 
 For the visualization, I simply displayed a randomly selected image from the dataset. By running this code-block multiple times, I was able to see various images and get a sense for the type of data my model would be training on. Here's one example:
 
-![Example Image from Training Set][sample_image.png]
+![Example Image from Training Set][./sample_image.png]
 
 ### Design and Test a Model Architecture
 
@@ -80,7 +80,7 @@ In creating my model, I took the following steps:
 
 Here are five German traffic signs that I found on the web:
 
-![Image 1][web_german_traffic_signs/1.jpeg] ![Image 2][web_german_traffic_signs/2.jpg] ![Image 3][web_german_traffic_signs/3.jpeg] ![Image 4][web_german_traffic_signs/4.jpg] ![Image 5][web_german_traffic_signs/5.jpeg]
+![Image 1][./web_german_traffic_signs/1.jpeg] ![Image 2][./web_german_traffic_signs/2.jpg] ![Image 3][./web_german_traffic_signs/3.jpeg] ![Image 4][./web_german_traffic_signs/4.jpg] ![Image 5][./web_german_traffic_signs/5.jpeg]
 
 * Image 1: One challenge with this image is that there are lots of german traffic signs with red triangles that refer to different types of warnings. Would the model realize that a red triangle with nothing in the middle and the point facing downward corresponds to "yield"?
 * Image 2: The challenge with this image is that there are many other traffic signs involving a blue circle with different types of arrows. Would the model be able to distinguish this one from the others?
